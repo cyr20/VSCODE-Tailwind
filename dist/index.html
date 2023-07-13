@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <header class="bg-[#2c2c32] p-[12.5px] mx-auto">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__content flex justify-between items-center">
+            <div class="logo flex gap-3 items-center">
+              <img class="w-7" src="../images/logo.png" alt="" />
+              <h3 class="text-white text-[20px]">Visual Studio Code</h3>
+            </div>
+
+            <nav class="hidden">
+              <ul class="flex gap-8 text-white">
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Updates</a></li>
+                <li><a href="#">Updates</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Extensions</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Search</a></li>
+              </ul>
+            </nav>
+
+            <div>
+              <button class="flex flex-col items-center">
+                <span class="block w-[1.4rem] h-[2px] bg-white mb-1"></span>
+                <span class="block w-[1.4rem] h-[2px] bg-white mb-1"></span>
+                <span class="block w-[1.4rem] h-[2px] bg-white"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="cta bg-[#25252b] px-5">
+      <p class="text-center p-2 text-gray-300">
+        <a href="#" class="text-[#0098ff]"><u>Version 1.80</u></a> is now available! Read about the new features and
+        fixes from June.
+      </p>
+    </section>
+
+    <section class="banner bg-[#2c2c32] p-[12.5px]">
+      <div class="container">
+        <div class="banner__wrapper">
+          <div class="banner__content">
+            <div class="banner__item text-center">
+              <h1 class="text-white text-[45px] font-thin">Code editing. <br><strong class="font-normal">Redefined.</strong></h1>
+              <p class="text-gray-300">Free. Built on open source. Runs everywhere.</p>
+              <div class="banner__buttons flex items-center gap-[1.5px] mt-5">
+                <button class="rounded-none bg-[#0066b8] text-white py-2 px-10 font-medium leading-5">Download for Windows <br /><span class="font-thin text-[12px]">Stable Build</span></button>
+                <button class="rounded-none bg-[#0066b8] text-white py-[18.5px] px-4"><img class="w-[20px]" src="../images/chevronDown.svg" alt="" /></button>
+              </div>
+              <span class="rounded-md bg-[#25252b]"
+                ><p class="text-gray-300">
+                  <a href="#" class="text-[#0066b8]">Web</a>, <a href="#" class="text-[#0066b8]">Insiders edition</a>, or <a href="#" class="text-[#0066b8]">other platforms</a>
+                </p></span
+              >
+              <p>By using VS Code, you agree to its</p>
+              <p class="text-[#0098ff]"><a href="#">license and privacy statement.</a></p>
+            </div>
+
+            <div class="banner__item">
+              <img src="../images/banner-image.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools">
+      <div class="container">
+        <div class="tools__wrapper">
+          <div class="tools__item">
+            <a href="../images/tools.svg"></a>
+            <div>
+              <p>Intellisense</p>
+            </div>
+          </div>
+
+          <div class="tools__item">
+            <a href="../images/tools.svg"></a>
+            <div>
+              <p>Run and Debug</p>
+            </div>
+          </div>
+
+          <div class="tools__item">
+            <a href="../images/tools.svg"></a>
+            <div>
+              <p>Built-in Git</p>
+            </div>
+          </div>
+
+          <div class="tools__item">
+            <a href="../images/tools.svg"></a>
+            <div>
+              <p>Extensions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="conttainer">
+        <div class="features__wrapper">
+          <div class="feature__content">
+            <div class="feature__item">
+              <div class="feature__img">
+                <img src="../images/intellisense.svg" alt="" />
+              </div>
+              <div class="feature_disc">
+                <h3>Meet IntelliSense.</h3>
+                <p>
+                  Go beyond syntax highlighting and autocomplete with
+                  IntelliSense, which provides smart completions based on
+                  variable types, function definitions, and imported modules.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature__item">
+              <div class="feature__img">
+                <img src="../images/debug.svg" alt="" />
+              </div>
+              <div class="feature_disc">
+                <h3>Print statement debugging is a thing of the past.</h3>
+                <p>
+                  Debug code right from the editor. Launch or attach to your
+                  running apps and debug with break points, call stacks, and an
+                  interactive console.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature__item">
+              <div class="feature__img">
+                <img src="../images/git.svg" alt="" />
+              </div>
+              <div class="feature_disc">
+                <h3>Git commands built-in.</h3>
+                <p>
+                  Working with Git and other SCM providers has never been
+                  easier. Review diffs, stage files, and make commits right from
+                  the editor. Push and pull from any hosted SCM service.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature__item">
+              <div class="feature__img">
+                <img src="../images/Extensions.png" alt="" />
+              </div>
+              <div class="feature_disc">
+                <h3>Extensible and customizable.</h3>
+                <p>
+                  Want even more features? Install extensions to add new
+                  languages, themes, debuggers, and to connect to additional
+                  services. Extensions run in separate processes, ensuring they
+                  won't slow down your editor.
+                  <a>Learn more about extensions.</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="feature__item">
+              <div class="feature__img">
+                <img src="../images/azure.svg" alt="" />
+              </div>
+              <div class="feature_disc">
+                <h3>Deploy with confidence and ease</h3>
+                <p>
+                  With <a href="">Microsoft Azure</a> you can deploy and host
+                  your React, Angular, Vue, Node, Python (and more!) sites,
+                  store and query relational and document based data, and scale
+                  with serverless computing, all with ease,
+                  <a href="">all from within VS Code</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="language">
+      <div class="container">
+        <div class="language__wrapper">
+          <div class="language__divider">
+            <div class="language__title">
+              <h1>VS Code for</h1>
+            </div>
+
+            <div class="language__container">
+              <div class="language__item">
+                <p><img src="../images/javascript.svg" alt="" />Javascript</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/python.svg" alt="" />Python</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/java.svg" alt="" />Java</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/markdown.svg" alt="" />Markdown</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/typescript.svg" alt="" />Typescript</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/cpp.svg" alt="" />C/C++</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/json.svg" alt="" />JSON</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/powershell.svg" alt="" />Powershell</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/html.svg" alt="" />HTML/CSS</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/csharp.svg" alt="" />C#</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/php.svg" alt="" />PHP</p>
+              </div>
+
+              <div class="language__item">
+                <p><img src="../images/yaml.svg" alt="" />YHML</p>
+              </div>
+            </div>
+
+            <p><a href="">and many more languages on the Marketplace...</a></p>
+          </div>
+          <div class="language__button">
+            <a href="">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="container">
+        <div class="download__wrapper">
+          <div class="download__contents">
+            <div class="download__item">
+              <img src="../images/windows-logo.png" alt="" />
+              <button>
+                <img src="../images/download.svg" alt="" />Windows <br />Windows
+                8, 10, 11
+              </button>
+
+              <table class="table-fixed">
+                <tbody>
+
+                  <tr>
+                    <td>User Installer</td>
+                    <td href="#">x64</td>
+                    <td href="#">x86</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                  <tr>
+                    <td>System Installer</td>
+                    <td href="#">x64</td>
+                    <td href="#">x86</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                  <tr>
+                    <td>.zip</td>
+                    <td href="#">x64</td>
+                    <td href="#">x86</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                  <tr>
+                    <td>CLI</td>
+                    <td href="#">x64</td>
+                    <td href="#">x86</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="download__item">
+              <img src="../images/linux-logo.png" alt="" />
+
+              <div class="download__buttons">
+                <button>
+                  <img src="../images/download.svg" alt="" />.deb
+                  <br />Debian, Ubuntu
+                </button>
+                <button>
+                  <img src="../images/download.svg" alt="" />.rpm
+                  <br />Red Hat, Fedora, SUSE
+                </button>
+              </div>
+              
+              <table class="table-fixed">
+                <tbody>
+                  <tr>
+                    <td>.deb</td>
+                    <td href="#">x64</td>
+                    <td href="#">Arm32</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                  <tr>
+                    <td>.rpm</td>
+                    <td href="#">x64</td>
+                    <td href="#">Arm32</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                  <tr>
+                    <td>.tar.gz</td>
+                    <td href="#">x64</td>
+                    <td href="#">Arm32</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+
+                  <tr>
+                    <td>Snap</td>
+                    <td href="#">Snap Store</td>
+                  </tr>
+
+                  <tr>
+                    <td>CLI</td>
+                    <td href="#">x64</td>
+                    <td href="#">Arm32</td>
+                    <td href="#">Arm64</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+            </div>
+
+            <div class="download__item">
+              <img src="../images/apple-logo.svg" alt="" />
+              <button>
+                <img src="../images/download.svg" alt="" />Mac <br />macOS 10.11+
+              </button>
+
+              <table>
+                <tbody>
+                  <tr>
+                    <td>.zip</td>
+                    <td href="#">Intel chip</td>
+                    <td href="#">Apple silicon</td>
+                    <td href="#">Universal</td>
+                  </tr>
+
+                  <tr>
+                    <td>CLI</td>
+                    <td href="#">Intel Chip</td>
+                    <td href="#">Apple silicon</td>
+                  </tr>
+                </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout">
+      <div class="container">
+        <div class="callout__wrapper">
+          <div class="callout__content">
+            <div class="callout__item">
+              <h1>Want new features sooner?</h1>
+              <p>Get the Insiders build instead.</p>
+            </div>
+
+            <div class="callout__item">
+              <h1>Use <a href="">vscode.dev</a> for quick edits online!</h1>
+              <p>Get the Insiders build instead.</p>
+            </div>
+
+            <div class="callout__item">
+              <h1>License and Privacy Terms</h1>
+              <p>By downloading and using Visual Studio Code, you agree to the <a href="">license terms</a> and <a href="">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="">How to Disable Crash Reporting</a> to learn how to disable it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__content1">
+            <p>Hello from Seattle.</p>
+            <a href="">Follow @code</a>
+            <span><a href=""><img src="../images/git-footer.svg" alt=""></a>Star</span>
+            <span><a href="">148,223</a></span>
+          </div>
+
+          <div class="footer__content2">
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">License</a></li>
+            </ul>
+            <div>
+              <img src="../images/microsoft-logo.png" alt="">
+              <p>© 2023 Microsoft</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
