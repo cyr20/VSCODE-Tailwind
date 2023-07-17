@@ -5,3 +5,67 @@
 .container {
   @apply mx-auto max-w-[140rem] w-full;
 }
+
+.platform::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #25252b;
+  top: -8px;
+  right: 10px;
+}
+
+.number::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 8px solid white;
+  top: 3px;
+  left: -5px;
+}
+
+.features {
+  @apply p-5;
+}
+
+.features__wrapper {
+  @apply mx-auto max-w-[140rem] w-full;
+}
+
+.features__content {
+  @apply gap-10;
+}
+
+.features__item:nth-child(odd) {
+  @apply bg-[#ffff];
+}
+
+.features__item:nth-child(even) {
+  @apply bg-[#f5f5f5];
+}
+
+.features__item {
+  @apply mb-10 pt-4 pb-10;
+}
+
+.features__img {
+  @apply w-[18rem] mt-10 mx-auto;
+}
+
+.features_disc h3 {
+  @apply text-[1.25rem] font-thin mb-10;
+}
+
+.features_disc p {
+  @apply leading-[2rem];
+}
+
+.language__item p {
+  @apply flex;
+}

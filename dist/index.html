@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header class="bg-[#2c2c32] p-[12.5px] mx-auto">
@@ -59,7 +60,7 @@
                 <button class="rounded-none bg-[#0066b8] text-white py-2 px-10 font-medium leading-5">Download for Windows <br /><span class="font-thin text-[12px]">Stable Build</span></button>
                 <button class="rounded-none bg-[#0066b8] text-white py-[18.5px] px-4"><img class="w-[20px]" src="../images/chevronDown.svg" alt="" /></button>
               </div>
-                <p class="text-gray-300 rounded-md bg-[#25252b] text-[12px] py-[8px] px-[47px] inline-block mb-3">
+                <p class="platform relative text-gray-300 rounded-md bg-[#25252b] text-[12px] py-[8px] px-[47px] inline-block mb-3">
                   <a href="#" class="text-[#0066b8]">Web</a>, <a href="#" class="text-[#0066b8]">Insiders edition</a>, or <a href="#" class="text-[#0066b8]">other platforms</a>
                 </p>
               <p class="text-gray-300 text-[12px]">By using VS Code, you agree to its</p>
@@ -74,34 +75,51 @@
       </div>
     </section>
 
-    <section class="tools">
+    <section class="tools p-[20px]">
       <div class="container">
-        <div class="tools__wrapper">
-          <div class="tools__item">
-            <a href="../images/tools.svg"></a>
+        <div class="tools__wrapper grid grid-cols-2 gap-10 items-center">
+          <div class="tools__item flex flex-col items-center">
+            <a href="#"><i class="fa fa-lightbulb text-[50px]"></i></a>
             <div>
-              <p>Intellisense</p>
+              <p class="text-center">Intellisense</p>
             </div>
           </div>
 
-          <div class="tools__item">
-            <a href="../images/tools.svg"></a>
+          <div class="tools__item flex flex-col items-center">
+            <a href="#"><img class="max-w-[3rem]" src="../images/debug-tools.png" alt=""></a>
             <div>
-              <p>Run and Debug</p>
+              <p class="text-center">Run and Debug</p>
             </div>
           </div>
 
-          <div class="tools__item">
-            <a href="../images/tools.svg"></a>
+          <div class="tools__item flex flex-col items-center">
+            <a href="#"><img class="max-w-[3rem]" src="../images/git-tools.png" alt=""></a>
             <div>
-              <p>Built-in Git</p>
+              <p class="text-center">Built-in Git</p>
             </div>
           </div>
 
-          <div class="tools__item">
-            <a href="../images/tools.svg"></a>
+          <div class="tools__item flex flex-col items-center">
+            <a href="#"><img class="max-w-[3rem]" src="../images/extension-tools.png" alt=""></a>
             <div>
-              <p>Extensions</p>
+              <p class="text-center">Extensions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider bg-[#f5f5f5] py-[65px]">
+      <div class="container">
+        <div class="slider__wrapper">
+          <div class="slider__content">
+            <div class="slider__item flex">
+              <img class="w-40 h-20" src="../images/Una.jpg" alt="">
+              <div class="slider__text flex flex-col">
+                <p>Una Kravets</p>
+                <small>@Una</small>
+                <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+              </div>
             </div>
           </div>
         </div>
@@ -109,16 +127,15 @@
     </section>
 
     <section class="features">
-      <div class="conttainer">
         <div class="features__wrapper">
-          <div class="feature__content">
-            <div class="feature__item">
-              <div class="feature__img">
+          <div class="features__content">
+            <div class="features__item">
+              <div class="features__img">
                 <img src="../images/intellisense.svg" alt="" />
               </div>
-              <div class="feature_disc">
-                <h3>Meet IntelliSense.</h3>
-                <p>
+              <div class="features_disc">
+                <h3  >Meet IntelliSense.</h3>
+                <p >
                   Go beyond syntax highlighting and autocomplete with
                   IntelliSense, which provides smart completions based on
                   variable types, function definitions, and imported modules.
@@ -126,13 +143,13 @@
               </div>
             </div>
 
-            <div class="feature__item">
-              <div class="feature__img">
+            <div class="features__item">
+              <div class="features__img">
                 <img src="../images/debug.svg" alt="" />
               </div>
-              <div class="feature_disc">
-                <h3>Print statement debugging is a thing of the past.</h3>
-                <p>
+              <div class="features_disc">
+                <h3  >Print statement debugging is a thing of the past.</h3>
+                <p >
                   Debug code right from the editor. Launch or attach to your
                   running apps and debug with break points, call stacks, and an
                   interactive console.
@@ -140,13 +157,13 @@
               </div>
             </div>
 
-            <div class="feature__item">
-              <div class="feature__img">
+            <div class="features__item">
+              <div class="features__img">
                 <img src="../images/git.svg" alt="" />
               </div>
-              <div class="feature_disc">
-                <h3>Git commands built-in.</h3>
-                <p>
+              <div class="features_disc">
+                <h3  >Git commands built-in.</h3>
+                <p >
                   Working with Git and other SCM providers has never been
                   easier. Review diffs, stage files, and make commits right from
                   the editor. Push and pull from any hosted SCM service.
@@ -154,51 +171,50 @@
               </div>
             </div>
 
-            <div class="feature__item">
-              <div class="feature__img">
+            <div class="features__item">
+              <div class="features__img">
                 <img src="../images/Extensions.png" alt="" />
               </div>
-              <div class="feature_disc">
-                <h3>Extensible and customizable.</h3>
-                <p>
+              <div class="features_disc">
+                <h3  >Extensible and customizable.</h3>
+                <p >
                   Want even more features? Install extensions to add new
                   languages, themes, debuggers, and to connect to additional
                   services. Extensions run in separate processes, ensuring they
                   won't slow down your editor.
-                  <a>Learn more about extensions.</a>
+                  <a href="#" class="text-[#0066b8] hover:underline">Learn more about extensions.</a>
                 </p>
               </div>
             </div>
 
-            <div class="feature__item">
-              <div class="feature__img">
+            <div class="features__item">
+              <div class="features__img">
                 <img src="../images/azure.svg" alt="" />
               </div>
-              <div class="feature_disc">
-                <h3>Deploy with confidence and ease</h3>
-                <p>
-                  With <a href="">Microsoft Azure</a> you can deploy and host
+              <div class="features_disc">
+                <h3  >Deploy with confidence and ease</h3>
+                <p >
+                  With <a href="#" class="text-[#0066b8] hover:underline">Microsoft Azure</a> you can deploy and host
                   your React, Angular, Vue, Node, Python (and more!) sites,
                   store and query relational and document based data, and scale
                   with serverless computing, all with ease,
-                  <a href="">all from within VS Code</a>.
+                  <a href="#" class="text-[#0066b8] hover:underline">all from within VS Code</a>.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
-    <section class="language">
+    <section class="language bg-[#f5f5f5] px-[12.5px] py-[65px]">
       <div class="container">
         <div class="language__wrapper">
           <div class="language__divider">
             <div class="language__title">
-              <h1>VS Code for</h1>
+              <h1 class="text-[1.25rem] font-thin text-center">VS Code for</h1>
             </div>
 
-            <div class="language__container">
+            <div class="language__container grid grid-cols-2 gap-5 pt-10">
               <div class="language__item">
                 <p><img src="../images/javascript.svg" alt="" />Javascript</p>
               </div>
@@ -248,55 +264,59 @@
               </div>
             </div>
 
-            <p><a href="">and many more languages on the Marketplace...</a></p>
+            <p class="text-center mt-5"><a href="" class="text-[#0066b8] hover:underline">and many more languages on the Marketplace...</a></p>
           </div>
-          <div class="language__button">
-            <a href="">Get Started Now</a>
+          <div class="language__button mt-10 text-center">
+            <a href="" class="rounded-none bg-[#0066b8] text-white inline-block py-3 px-8 font-medium text-[20px]">Get Started Now</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="download">
+    <section class="download px-[12.5px] py-[60px]">
       <div class="container">
         <div class="download__wrapper">
           <div class="download__contents">
             <div class="download__item">
-              <img src="../images/windows-logo.png" alt="" />
-              <button>
-                <img src="../images/download.svg" alt="" />Windows <br />Windows
-                8, 10, 11
+              <img class="max-w-[6rem] mx-auto" src="../images/windows-logo.png" alt="" />
+              <button class="rounded-none bg-[#0066b8] text-white py-3 px-[65px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto">
+                <div class="download__divider flex gap-3">
+                  <img class="w-[1rem]" src="../images/download.svg" alt="" /> 
+                  <p class="text-[15px]">Windows</p>
+                </div>
+                <small class="text-[10px]">Windows
+                  8, 10, 11</small>
               </button>
 
-              <table class="table-fixed">
+              <table class="table-fixed mx-auto border-separate border-spacing-1">
                 <tbody>
 
                   <tr>
-                    <td>User Installer</td>
-                    <td href="#">x64</td>
-                    <td href="#">x86</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">User Installer</td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x64</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x86</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">Arm64</a></td>
                   </tr>
 
                   <tr>
-                    <td>System Installer</td>
-                    <td href="#">x64</td>
-                    <td href="#">x86</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">System Installer</td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x64</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x86</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">Arm64</a></td>
                   </tr>
 
                   <tr>
-                    <td>.zip</td>
-                    <td href="#">x64</td>
-                    <td href="#">x86</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">.zip</td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x64</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x86</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">Arm64</a></td>
                   </tr>
 
                   <tr>
-                    <td>CLI</td>
-                    <td href="#">x64</td>
-                    <td href="#">x86</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">CLI</td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x64</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">x86</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="">Arm64</a></td>
                   </tr>
 
                 </tbody>
@@ -304,77 +324,86 @@
             </div>
 
             <div class="download__item">
-              <img src="../images/linux-logo.png" alt="" />
+              <img class="max-w-[6rem] mx-auto" src="../images/linux-logo.png" alt="" />
 
-              <div class="download__buttons">
-                <button>
-                  <img src="../images/download.svg" alt="" />.deb
-                  <br />Debian, Ubuntu
+              <div class="download__buttons flex justify-center items-center gap-[1.5px]">
+                <button class="rounded-none bg-[#0066b8] text-white py-3 px-[30px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto">
+                  <div class="download__divider flex gap-3">
+                    <img class="w-[1rem]" src="../images/download.svg" alt="" /> 
+                    <p class="text-[15px]">.deb</p>
+                  </div>
+                  <small class="text-[10px]">Debian, Ubuntu</small>
                 </button>
-                <button>
-                  <img src="../images/download.svg" alt="" />.rpm
-                  <br />Red Hat, Fedora, SUSE
+                <button class="rounded-none bg-[#0066b8] text-white py-3 px-[20px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto">
+                  <div class="download__divider flex gap-3">
+                    <img class="w-[1rem]" src="../images/download.svg" alt="" /> 
+                    <p class="text-[15px]">.rpm</p>
+                  </div>
+                  <small class="text-[10px]">Red hat, Fedora, SUSE</small>
                 </button>
               </div>
               
-              <table class="table-fixed">
+              <table class="table-fixed mx-auto border-separate border-spacing-1">
                 <tbody>
                   <tr>
-                    <td>.deb</td>
-                    <td href="#">x64</td>
-                    <td href="#">Arm32</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">.deb</td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">x64</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm32</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm64</a></td>
                   </tr>
 
                   <tr>
-                    <td>.rpm</td>
-                    <td href="#">x64</td>
-                    <td href="#">Arm32</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">.rpm</td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">x64</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm32</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm64</a></td>
                   </tr>
 
                   <tr>
-                    <td>.tar.gz</td>
-                    <td href="#">x64</td>
-                    <td href="#">Arm32</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">.tar.gz</td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">x64</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm32</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm64</a></td>
                   </tr>
 
                   <tr>
-                    <td>Snap</td>
-                    <td href="#">Snap Store</td>
+                    <td class="text-[14px] font-medium">Snap</td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Snap Store</a></td>
                   </tr>
 
                   <tr>
-                    <td>CLI</td>
-                    <td href="#">x64</td>
-                    <td href="#">Arm32</td>
-                    <td href="#">Arm64</td>
+                    <td class="text-[14px] font-medium">CLI</td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">x64</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm32</a></td>
+                    <td class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Arm64</a></td>
                   </tr>
                 </tbody>
-              </table>
-              
+              <table>
             </div>
 
             <div class="download__item">
-              <img src="../images/apple-logo.svg" alt="" />
-              <button>
-                <img src="../images/download.svg" alt="" />Mac <br />macOS 10.11+
+              <img class="max-w-[6rem] mx-auto" src="../images/apple-logo.svg" alt="" />
+              <button class="rounded-none bg-[#0066b8] text-white py-3 px-[65px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto">
+                <div class="download__divider flex gap-3">
+                  <img class="w-[1rem]" src="../images/download.svg" alt="" /> 
+                  <p class="text-[15px]">Mac</p>
+                </div>
+                <small class="text-[10px]">macOS 10.11+</small>
               </button>
 
-              <table>
+              <table class="table-fixed mx-auto border-separate border-spacing-1">
                 <tbody>
                   <tr>
-                    <td>.zip</td>
-                    <td href="#">Intel chip</td>
-                    <td href="#">Apple silicon</td>
-                    <td href="#">Universal</td>
+                    <td class="text-[14px] font-medium">.zip</td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Intel chip</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Apple silicon</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Universal</a></td>
                   </tr>
 
                   <tr>
-                    <td>CLI</td>
-                    <td href="#">Intel Chip</td>
-                    <td href="#">Apple silicon</td>
+                    <td class="text-[14px] font-medium">CLI</td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Intel chip</a></td>
+                    <td href="#" class="rounded-none bg-[#0066b8] text-white text-[12px]"><a href="#">Apple silicon</a></td>
                   </tr>
                 </tbody>
             </table>
@@ -384,49 +413,51 @@
       </div>
     </section>
 
-    <section class="callout">
+    <section class="callout py-[3rem] px-[3rem] bg-[#f5f5f5]">
       <div class="container">
         <div class="callout__wrapper">
           <div class="callout__content">
-            <div class="callout__item">
-              <h1>Want new features sooner?</h1>
-              <p>Get the Insiders build instead.</p>
+            <div class="callout__item text-center mb-[6rem]">
+              <h1 class="text-[20px] font-medium">Want new features sooner?</h1>
+              <p>Get the <a href="#" class="text-[#0066b8] hover:underline">Insiders build</a> instead.</p>
             </div>
 
-            <div class="callout__item">
-              <h1>Use <a href="">vscode.dev</a> for quick edits online!</h1>
-              <p>Get the Insiders build instead.</p>
+            <div class="callout__item text-center mb-[6rem] px-[2.5rem]">
+              <h1 class="text-[20px] font-medium">Use <a href="#" class="text-[#0066b8] hover:underline">vscode.dev</a> for quick edits online!</h1>
+              <p>GitHub, Azure Repos, and local files.</p>
             </div>
 
-            <div class="callout__item">
-              <h1>License and Privacy Terms</h1>
-              <p>By downloading and using Visual Studio Code, you agree to the <a href="">license terms</a> and <a href="">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="">How to Disable Crash Reporting</a> to learn how to disable it.</p>
+            <div class="callout__item text-center px-[2.8rem]">
+              <h1 class="text-[15px] font-medium">License and Privacy Terms</h1>
+              <p class="text-[12px] leading-10">By downloading and using Visual Studio Code, you agree to the <a href="#" class="text-[#0066b8] hover:underline">license terms</a> and <a href="#" class="text-[#0066b8] hover:underline">privacy statement</a>. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a href="#" class="text-[#0066b8] hover:underline">How to Disable Crash Reporting</a> to learn how to disable it.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
+    <footer class="bg-[#2c2c32] p-[12.5px] mx-auto">
+      <div class="container"> 
         <div class="footer__wrapper">
-          <div class="footer__content1">
-            <p>Hello from Seattle.</p>
-            <a href="">Follow @code</a>
-            <span><a href=""><img src="../images/git-footer.svg" alt=""></a>Star</span>
-            <span><a href="">148,223</a></span>
+          <div class="footer__content1 flex gap-5 mb-7">
+            <p class="text-white hidden">Hello from Seattle.</p>
+            <a class="text-white hover:text-[#cb8ae9]" href="">Follow @code</a>
+            <div class="span flex gap-[5px]">
+              <span class="rounded-sm bg-white flex items-center gap-2 text-[13px] font-medium px-[5px]"><a href=""><img class="max-w-[15px]" src="../images/git-footer.svg" alt=""></a>Star</span>
+              <span class="number relative rounded-sm bg-white flex items-center gap-2 text-[13px] font-medium px-[5px]"><a href="">148,223</a></span>
+            </div>
           </div>
 
           <div class="footer__content2">
-            <ul>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">License</a></li>
+            <ul class="text-white flex gap-6 text-[12px] mb-3">
+              <li><a class="hover:text-[#cb8ae9]" href="#">Support</a></li>
+              <li><a class="hover:text-[#cb8ae9]" href="#">Privacy</a></li>
+              <li><a class="hover:text-[#cb8ae9]" href="#">Terms of Use</a></li>
+              <li><a class="hover:text-[#cb8ae9]" href="#">License</a></li>
             </ul>
             <div>
-              <img src="../images/microsoft-logo.png" alt="">
-              <p>© 2023 Microsoft</p>
+              <img class="max-w-[6rem]" src="../images/microsoft-logo.png" alt="">
+              <p class="text-white text-[12px]">© 2023 Microsoft</p>
             </div>
           </div>
         </div>
