@@ -51,11 +51,11 @@
 }
 
 .features__item {
-  @apply mb-10 pt-4 pb-10;
+  @apply mb-10 pt-4 pb-10 lg:flex lg:items-center md:flex md:items-center md:gap-[100px];
 }
 
-.features__img {
-  @apply w-[18rem] mt-10 mx-auto;
+.features__item img {
+  @apply w-[18rem] mt-10 mx-auto lg:w-[1200px] md:w-[550px];
 }
 
 .features_disc h3 {
