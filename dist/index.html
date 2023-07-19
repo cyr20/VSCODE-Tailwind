@@ -15,7 +15,9 @@
     />
   </head>
   <body>
-    <header class="bg-[#2c2c32] py-[11.7px] lg:px-[375px] md:px-[18px]">
+    <header
+      class="bg-[#2c2c32] sm:py-[10px] lg:px-[375px] md:px-[18px] lsm:py-0 lmd:p-[10px] lmd:px-[20px] md:py-0 lg:py-0"
+    >
       <div class="container">
         <div class="header__wrapper">
           <div class="header__content flex justify-between items-center">
@@ -39,12 +41,12 @@
               </nav>
             </div>
 
-            <div class="header__searchbar md:hidden lg:block">
+            <div class="header__searchbar sm:hidden md:hidden lg:block">
               <ul class="flex flex-row items-center justify-between">
                 <li class="bg-[#3d3d42]">
                   <form
                     action=""
-                    class="flex flex-row items-center py-[12px] pl-[20px]"
+                    class="flex flex-row items-center py-[14px] pl-[20px]"
                   >
                     <div>
                       <i
@@ -61,7 +63,7 @@
 
                 <li>
                   <button
-                    class="rounded-none bg-[#0066b8] text-white py-[12px] inline-block px-[15px] font-medium text-[20px] lg:flex lg:flex-row items-center gap-2 sm:hidden"
+                    class="rounded-none bg-[#0066b8] text-white py-[14px] inline-block px-[15px] font-medium text-[20px] lg:flex lg:flex-row items-center gap-2 sm:hidden hover:bg-[#045da7]"
                   >
                     <img class="w-[1rem]" src="../images/download.svg" alt="" />
                     <p class="text-[15px]">Download</p>
@@ -84,8 +86,10 @@
 
     <section class="cta bg-[#25252b] px-5">
       <p class="text-center p-2 text-gray-300">
-        <a href="#" class="text-[#0098ff]"><u>Version 1.80</u></a> is now
-        available! Read about the new features and fixes from June.
+        <a href="#" class="text-[#0098ff]"
+          ><u class="hover:no-underline">Version 1.80</u></a
+        >
+        is now available! Read about the new features and fixes from June.
       </p>
     </section>
 
@@ -95,9 +99,9 @@
       <div class="container">
         <div class="banner__wrapper">
           <div
-            class="banner__content lg:flex lg:flex-row lg:items-center gap-10 mr-auto ml-auto md:flex md:flex-col md:gap-0"
+            class="banner__content lg:flex lg:flex-row lg:items-center lg:gap-20 mr-auto ml-auto md:flex md:flex-col md:gap-0"
           >
-            <div class="banner__item text-center mb-5">
+            <div class="banner__item text-center mb-5 lg:mb-[150px]">
               <h1 class="text-white text-[45px] font-thin leading-[50px] mb-2">
                 Code editing. <br /><strong class="font-normal"
                   >Redefined.</strong
@@ -110,14 +114,14 @@
                 class="banner__buttons flex justify-center items-center gap-[1.5px] mt-5 mb-3"
               >
                 <button
-                  class="rounded-none bg-[#0066b8] text-white py-2 px-10 font-medium leading-5"
+                  class="rounded-none bg-[#0066b8] text-white py-2 px-10 font-medium leading-5 hover:bg-[#045da7]"
                 >
                   Download for Windows <br /><span class="font-thin text-[12px]"
                     >Stable Build</span
                   >
                 </button>
                 <button
-                  class="rounded-none bg-[#0066b8] text-white py-[18.5px] px-4"
+                  class="rounded-none bg-[#0066b8] text-white py-[18.5px] px-4 hover:bg-[#045da7]"
                 >
                   <img
                     class="w-[20px]"
@@ -129,21 +133,25 @@
               <p
                 class="platform relative text-gray-300 rounded-md bg-[#25252b] text-[12px] py-[8px] px-[47px] inline-block mb-3"
               >
-                <a href="#" class="text-[#0066b8]">Web</a>,
-                <a href="#" class="text-[#0066b8]">Insiders edition</a>, or
-                <a href="#" class="text-[#0066b8]">other platforms</a>
+                <a href="#" class="text-[#0066b8] hover:underline">Web</a>,
+                <a href="#" class="text-[#0066b8] hover:underline"
+                  >Insiders edition</a
+                >, or
+                <a href="#" class="text-[#0066b8] hover:underline"
+                  >other platforms</a
+                >
               </p>
               <p class="text-gray-300 text-[12px]">
                 By using VS Code, you agree to its
               </p>
-              <p class="text-[#0098ff] text-[12px]">
+              <p class="text-[#0098ff] text-[12px] hover:underline">
                 <a href="#">license and privacy statement.</a>
               </p>
             </div>
 
             <div class="banner__item">
               <img
-                class="w-90 h-30 bg-no-repeat md:w-[620px] md:h-[400px] md:m-auto lg:w-[750px] lg:h-[550px]"
+                class="w-90 h-30 bg-no-repeat md:w-[620px] md:h-[415px] md:m-auto lmd:w-[610px] lmd:h-[420px] lmd:m-auto lg:w-[750px] lg:h-[550px] lmd:mb-[60px]"
                 src="../images/banner-image.png"
                 alt=""
               />
@@ -153,154 +161,191 @@
       </div>
     </section>
 
-    <section class="tools p-[20px]">
+    <section class="tools">
       <div class="container">
         <div
-          class="tools__wrapper grid grid-cols-2 gap-10 items-center lg:flex lg:flex-row lg:justify-center lg:gap-[13rem] md:flex md:flex-row md:justify-center md:gap-[9rem]"
+          class="tools__wrapper grid grid-cols-2 gap-0 items-center sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4 lg:justify-center md:grid md:grid-cols-4 md:justify-center lg:px-[400px] lmd:grid lmd:grid-cols-4 lmd:justify-center"
         >
-          <div class="tools__item flex flex-col items-center">
-            <a href="#"><i class="fa fa-lightbulb text-[50px]"></i></a>
+          <div
+            class="tools__item flex flex-col items-center cursor-pointer hover:bg-[#cecaca] lg:py-[40px] lg:px-[40px] sm:py-[20px]"
+          >
+            <div
+              class="bg-[url('../images/bulb.png')] hover:bg-[url('../images/bulb-color.png')] bg-cover w-[50px] h-[50px]"
+            >
+              <a href="#"></a>
+            </div>
             <div>
               <p class="text-center">Intellisense</p>
             </div>
           </div>
 
-          <div class="tools__item flex flex-col items-center">
-            <a href="#"
-              ><img class="max-w-[3rem]" src="../images/debug-tools.png" alt=""
-            /></a>
+          <div
+            class="tools__item flex flex-col items-center cursor-pointer hover:bg-[#cecaca] lg:py-[40px] lg:px-[40px] sm:py-[20px]"
+          >
+            <div
+              class="bg-[url('../images/run.png')] hover:bg-[url('../images/run-color.png')] bg-cover w-[50px] h-[50px]"
+            >
+              <a href="#"></a>
+            </div>
             <div>
-              <p class="text-center">Run and Debug</p>
+              <p class="text-center">Intellisense</p>
             </div>
           </div>
 
-          <div class="tools__item flex flex-col items-center">
-            <a href="#"
-              ><img class="max-w-[3rem]" src="../images/git-tools.png" alt=""
-            /></a>
+          <div
+            class="tools__item flex flex-col items-center cursor-pointer hover:bg-[#cecaca] lg:py-[40px] lg:px-[40px] sm:py-[20px]"
+          >
+            <div
+              class="bg-[url('../images/built.png')] hover:bg-[url('../images/built-color.png')] bg-cover w-[50px] h-[50px]"
+            >
+              <a href="#"></a>
+            </div>
             <div>
-              <p class="text-center">Built-in Git</p>
+              <p class="text-center">Intellisense</p>
             </div>
           </div>
 
-          <div class="tools__item flex flex-col items-center">
-            <a href="#"
-              ><img
-                class="max-w-[3rem]"
-                src="../images/extension-tools.png"
-                alt=""
-            /></a>
+          <div
+            class="tools__item flex flex-col items-center cursor-pointer hover:bg-[#cecaca] lg:py-[40px] lg:px-[40px] sm:py-[20px]"
+          >
+            <div
+              class="bg-[url('../images/exte.png')] hover:bg-[url('../images/exte-color.png')] bg-cover w-[50px] h-[50px]"
+            >
+              <a href="#"></a>
+            </div>
             <div>
-              <p class="text-center">Extensions</p>
+              <p class="text-center">Intellisense</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="slider bg-[#f5f5f5] py-[65px] lg:px-[375px]">
+    <section class="slider bg-[#f5f5f5] py-[65px] lg:px-[375px] lmd:px-[100px]">
       <div class="container">
         <div class="slider__wrapper">
           <div class="slider__content px-[60px]">
-            <div class="slider__item flex items-center gap-2 mb-[25px]">
-              <img
-                class="w-[140px] h-[60px] rounded-full"
-                src="../images/Una.jpg"
-                alt=""
-              />
-              <div class="slider__text flex flex-col">
-                <p class="text-[11px] font-bold">Una Kravets</p>
-                <small class="text-[10px]">@Una</small>
-                <p class="text-[15px]">
-                  VS @code does so many things right. I’m constantly impressed
-                  by the UX, and customizing workspace / user preferences is no
-                  exception. 🙌🏼💯 It just keeps getting better ❤️
-                </p>
+            <div class="slider__divider lg:grid lg:grid-cols-3 lg:items-center">
+              <div
+                class="slider__item flex flex-row items-center gap-2 mb-[25px]"
+              >
+                <div class="mb-[30px]">
+                  <img class="" src="../images/Una.jpg" alt="" />
+                </div>
+                <div class="slider__text flex flex-col">
+                  <div class="flex justify-between">
+                    <p class="text-[11px] font-bold">Una Kravets</p>
+                    <i class="fa-brands fa-twitter text-[#cecaca]"></i>
+                  </div>
+                  <small class="text-[10px]">@Una</small>
+                  <p class="text-[15px]">
+                    VS @code does so many things right. I’m constantly impressed
+                    by the UX, and customizing workspace / user preferences is
+                    no exception. 🙌🏼💯 It just keeps getting better ❤️
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="slider__item flex flex-row items-center gap-2 mb-[25px]"
+              >
+                <div class="mb-[30px]">
+                  <img class="" src="../images/jadbox.jpg" alt="" />
+                </div>
+                <div class="slider__text flex flex-col">
+                  <div class="flex justify-between">
+                    <p class="text-[11px] font-bold">Jonathan Dunlap</p>
+                    <i class="fa-brands fa-twitter text-[#cecaca]"></i>
+                  </div>
+                  <small class="text-[10px]">@jadbox</small>
+                  <p class="text-[15px]">
+                    VS Code will have deep remote development. You can connect
+                    to a container running a different OS and use any VS Code
+                    plugins, linting, debugging for that environment. 🔥🔥🔥
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="slider__item flex flex-row items-center gap-2 mb-[25px]"
+              >
+                <div class="mb-[30px]">
+                  <img class="" src="../images/PKodmad.jpg" alt="" />
+                </div>
+                <div class="slider__text flex flex-col">
+                  <div class="flex justify-between">
+                    <p class="text-[11px] font-bold">Pavithra Kodman</p>
+                    <i class="fa-brands fa-twitter text-[#cecaca]"></i>
+                  </div>
+                  <small class="text-[10px]">@PKodmad</small>
+                  <p class="text-[15px]">
+                    VS Code is my most used and favorite editor. I love being
+                    able to customize the editor - changing the layout, the
+                    icons, fonts and color scheme is so easy!
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="slider__item flex items-center gap-2 mb-[25px]">
-              <img
-                class="w-[140px] h-[60px] rounded-full"
-                src="../images/jadbox.jpg"
-                alt=""
-              />
-              <div class="slider__text flex flex-col">
-                <p class="text-[11px] font-bold">Jonathan Dunlap</p>
-                <small class="text-[10px]">@jadbox</small>
-                <p class="text-[15px]">
-                  VS Code will have deep remote development. You can connect to
-                  a container running a different OS and use any VS Code
-                  plugins, linting, debugging for that environment. 🔥🔥🔥
-                </p>
+            <div class="slider__divider lg:grid lg:grid-cols-3 lg:items-center">
+              <div
+                class="slider__item flex flex-row items-center gap-2 mb-[25px]"
+              >
+                <div class="mb-[30px]">
+                  <img class="" src="../images/MrDarrenV.jpg" alt="" />
+                </div>
+                <div class="slider__text flex flex-col">
+                  <div class="flex justify-between">
+                    <p class="text-[11px] font-bold">Darren</p>
+                    <i class="fa-brands fa-twitter text-[#cecaca]"></i>
+                  </div>
+                  <small class="text-[10px]">@MrDarrenV</small>
+                  <p class="text-[15px]">
+                    Just as I thought @code couldn't get better, out comes its
+                    Remote Development plugins that let you remote into
+                    containers as a dev environment! 😍
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="slider__item flex items-center gap-2">
-              <img
-                class="w-[140px] h-[60px] rounded-full"
-                src="../images/PKodmad.jpg"
-                alt=""
-              />
-              <div class="slider__text flex flex-col">
-                <p class="text-[11px] font-bold">Pavithra Kodman</p>
-                <small class="text-[10px]">@PKodman</small>
-                <p class="text-[15px]">
-                  VS Code is my most used and favorite editor. I love being able
-                  to customize the editor - changing the layout, the icons,
-                  fonts and color scheme is so easy!
-                </p>
+              <div
+                class="slider__item flex flex-row items-center gap-2 mb-[25px]"
+              >
+                <div class="mb-[30px]">
+                  <img class="" src="../images/cassidoo.jpg" alt="" />
+                </div>
+                <div class="slider__text flex flex-col">
+                  <div class="flex justify-between">
+                    <p class="text-[11px] font-bold">Cassidy Williams</p>
+                    <i class="fa-brands fa-twitter text-[#cecaca]"></i>
+                  </div>
+                  <small class="text-[10px]">@cassidoo</small>
+                  <p class="text-[15px]">
+                    I was a vim fan, but then discovered VS Code's Vim plugin,
+                    which lets me add in my vim keybindings. I can maintain my
+                    coding style without having to compromise on speed.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="slider__item flex items-center gap-2 mb-[25px]">
-              <img
-                class="w-[140px] h-[60px] rounded-full"
-                src="../images/Una.jpg"
-                alt=""
-              />
-              <div class="slider__text flex flex-col">
-                <p class="text-[11px] font-bold">Darren</p>
-                <small class="text-[10px]">@MrDarrenV</small>
-                <p class="text-[15px]">
-                  Just as I thought @code couldn't get better, out comes its
-                  Remote Development plugins that let you remote into containers
-                  as a dev environment! 😍
-                </p>
-              </div>
-            </div>
-
-            <div class="slider__item flex items-center gap-2 mb-[25px]">
-              <img
-                class="w-[140px] h-[60px] rounded-full"
-                src="../images/jadbox.jpg"
-                alt=""
-              />
-              <div class="slider__text flex flex-col">
-                <p class="text-[11px] font-bold">Cassidy Williams</p>
-                <small class="text-[10px]">@cassidoo</small>
-                <p class="text-[15px]">
-                  I was a vim fan, but then discovered VS Code's Vim plugin,
-                  which lets me add in my vim keybindings. I can maintain my
-                  coding style without having to compromise on speed.
-                </p>
-              </div>
-            </div>
-
-            <div class="slider__item flex items-center gap-2">
-              <img
-                class="w-[140px] h-[60px] rounded-full"
-                src="../images/PKodmad.jpg"
-                alt=""
-              />
-              <div class="slider__text flex flex-col">
-                <p class="text-[11px] font-bold">Gift Egwuenu</p>
-                <small class="text-[10px]">@lauragift21</small>
-                <p class="text-[15px]">
-                  I love @code The built-in markdown previewer is awesome and
-                  the plugin system allows me to use GitLens, which makes my
-                  workflow so much easier.
-                </p>
+              <div
+                class="slider__item flex flex-row items-center gap-2 mb-[25px]"
+              >
+                <div class="mb-[30px]">
+                  <img class="" src="../images/lauragift21.jpg" alt="" />
+                </div>
+                <div class="slider__text flex flex-col">
+                  <div class="flex justify-between">
+                    <p class="text-[11px] font-bold">Gift Egwuenu</p>
+                    <i class="fa-brands fa-twitter text-[#cecaca]"></i>
+                  </div>
+                  <small class="text-[10px]">@lauragift21</small>
+                  <p class="text-[15px]">
+                    I love @code The built-in markdown previewer is awesome and
+                    the plugin system allows me to use GitLens, which makes my
+                    workflow so much easier.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -355,7 +400,11 @@
 
           <div class="features__item">
             <div class="features__img">
-              <img src="../images/Extensions.png" alt="" />
+              <img
+                class="hover:scale-[1.1]"
+                src="../images/Extensions.png"
+                alt=""
+              />
             </div>
             <div class="features_disc">
               <h3>Extensible and customizable.</h3>
@@ -404,7 +453,7 @@
             </div>
 
             <div
-              class="language__container grid grid-cols-2 gap-5 pt-10 lg:grid lg:grid-cols-6 md:grid md:grid-cols-4"
+              class="language__container grid grid-cols-2 gap-5 pt-10 lg:grid lg:grid-cols-6 md:grid md:grid-cols-4 lmd:grid lmd:grid-cols-4"
             >
               <div class="language__item">
                 <p><img src="../images/javascript.svg" alt="" />Javascript</p>
@@ -464,7 +513,7 @@
           <div class="language__button mt-10 text-center">
             <a
               href=""
-              class="rounded-none bg-[#0066b8] text-white inline-block py-3 px-8 font-medium text-[20px]"
+              class="rounded-none bg-[#0066b8] text-white inline-block py-3 px-8 font-medium text-[20px] hover:bg-[#045da7]"
               >Get Started Now</a
             >
           </div>
@@ -472,10 +521,12 @@
       </div>
     </section>
 
-    <section class="download px-[12.5px] py-[60px] lg:px-[450px]">
+    <section
+      class="download px-[12.5px] py-[60px] lg:px-[450px] lmd:px-[30px] lmd:py-[20px]"
+    >
       <div class="container">
         <div
-          class="download__wrapper flex flex-col lg:grid lg:grid-cols-3 md:grid md:grid-cols-3"
+          class="download__wrapper sm:flex sm:flex-col lsm:flex lsm:flex-col lg:grid lg:grid-cols-3 md:grid md:grid-cols-3"
         >
           <div class="download__item">
             <img
@@ -484,7 +535,7 @@
               alt=""
             />
             <button
-              class="rounded-none bg-[#0066b8] text-white py-3 px-[65px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto"
+              class="rounded-none bg-[#0066b8] text-white py-3 px-[65px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto hover:bg-[#045da7]"
             >
               <div class="download__divider flex gap-3">
                 <img class="w-[1rem]" src="../images/download.svg" alt="" />
@@ -499,19 +550,19 @@
                   <td class="text-[14px] font-medium">User Installer</td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x64</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x86</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">Arm64</a>
                   </td>
@@ -521,19 +572,19 @@
                   <td class="text-[14px] font-medium">System Installer</td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x64</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x86</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">Arm64</a>
                   </td>
@@ -543,19 +594,19 @@
                   <td class="text-[14px] font-medium">.zip</td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x64</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x86</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">Arm64</a>
                   </td>
@@ -565,19 +616,19 @@
                   <td class="text-[14px] font-medium">CLI</td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x64</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">x86</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="">Arm64</a>
                   </td>
@@ -586,17 +637,17 @@
             </table>
           </div>
 
-          <div class="download__item">
+          <div class="download__item lmd:mt-[10px]">
             <img
               class="max-w-[6rem] mx-auto lg:max-w-[80px] md:max-w-[80px]"
               src="../images/linux-logo.png"
               alt=""
             />
             <div
-              class="download__buttons flex flex-row px-[82px] items-center gap-[1.5px] lg:px-[30px] md:px-[18px]"
+              class="download__buttons flex flex-row px-[82px] items-center gap-[1.5px] sm:px-[91px] lg:px-[30px] md:px-[18px] lsm:px-[165px] lmd:px-[35px]"
             >
               <button
-                class="rounded-none bg-[#0066b8] text-white py-3 px-[30px] font-medium text-[20px] flexflex-col items-center my-5 mx-auto leading-[17.2px]"
+                class="rounded-none bg-[#0066b8] text-white py-3 px-[30px] font-medium text-[20px] flexflex-col items-center my-5 mx-auto leading-[17.2px] hover:bg-[#045da7]"
               >
                 <div class="download__divider flex gap-3">
                   <img class="w-[1rem]" src="../images/download.svg" alt="" />
@@ -605,7 +656,7 @@
                 <small class="text-[10px]">Debian, Ubuntu</small>
               </button>
               <button
-                class="rounded-none bg-[#0066b8] text-white py-3 px-[20px] font-medium text-[20px] flexflex-col items-center my-5 mx-auto leading-[17.2px]"
+                class="rounded-none bg-[#0066b8] text-white py-3 px-[20px] font-medium text-[20px] flexflex-col items-center my-5 mx-auto leading-[17.2px] hover:bg-[#045da7]"
               >
                 <div class="download__divider flex gap-3">
                   <img class="w-[1rem]" src="../images/download.svg" alt="" />
@@ -619,55 +670,81 @@
               <tbody>
                 <tr>
                   <td class="text-[14px] font-medium">.deb</td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">x64</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm32</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm64</a>
                   </td>
                 </tr>
                 <tr>
                   <td class="text-[14px] font-medium">.rpm</td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">x64</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm32</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm64</a>
                   </td>
                 </tr>
                 <tr>
                   <td class="text-[14px] font-medium">.tar.gz</td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">x64</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm32</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm64</a>
                   </td>
                 </tr>
                 <tr>
                   <td class="text-[14px] font-medium">Snap</td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Snap Store</a>
                   </td>
                 </tr>
                 <tr>
                   <td class="text-[14px] font-medium">CLI</td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">x64</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm32</a>
                   </td>
-                  <td class="rounded-none bg-[#0066b8] text-white text-[12px]">
+                  <td
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
+                  >
                     <a href="#">Arm64</a>
                   </td>
                 </tr>
@@ -682,7 +759,7 @@
               alt=""
             />
             <button
-              class="rounded-none bg-[#0066b8] text-white py-3 px-[65px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto"
+              class="rounded-none bg-[#0066b8] text-white py-3 px-[65px] font-medium text-[20px] flex flex-col items-center my-5 mx-auto hover:bg-[#045da7]"
             >
               <div class="download__divider flex gap-3">
                 <img class="w-[1rem]" src="../images/download.svg" alt="" />
@@ -697,19 +774,19 @@
                   <td class="text-[14px] font-medium">.zip</td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="#">Intel chip</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="#">Apple silicon</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="#">Universal</a>
                   </td>
@@ -719,13 +796,13 @@
                   <td class="text-[14px] font-medium">CLI</td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="#">Intel chip</a>
                   </td>
                   <td
                     href="#"
-                    class="rounded-none bg-[#0066b8] text-white text-[12px]"
+                    class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="#">Apple silicon</a>
                   </td>
@@ -768,7 +845,7 @@
             </div>
 
             <div
-              class="callout__item text-center px-[2.8rem] lg:px-[12rem] md:px-[10rem]"
+              class="callout__item text-center px-[2.8rem] lg:px-[12rem] md:px-[10rem] lsm:px-[5.5rem] lmd:px-[7.7rem]"
             >
               <h1 class="text-[15px] font-medium">License and Privacy Terms</h1>
               <p class="text-[12px] leading-10">
@@ -794,16 +871,18 @@
     </section>
 
     <footer
-      class="bg-[#2c2c32] p-[12.5px] mx-auto lg:p-[18px] lg:px-[375px] lg:items-center lg:text-center"
+      class="bg-[#333333] p-[12.5px] mx-auto lg:p-[18px] lg:px-[375px] lg:items-center lg:text-center"
     >
       <div class="container">
         <div class="footer__wrapper lg:flex lg:justify-between">
           <div class="footer__content1 flex gap-5 mb-7 lg:mb-0 lg:items-center">
-            <p class="text-white sm:hidden md:flex">Hello from Seattle.</p>
+            <p class="text-white sm:hidden md:flex lmd:block">
+              Hello from Seattle.
+            </p>
             <a class="text-white hover:text-[#cb8ae9]" href="">Follow @code</a>
             <div class="span flex gap-[5px] lg:items-center">
               <span
-                class="rounded-sm bg-white flex items-center gap-2 text-[13px] font-medium px-[5px]"
+                class="rounded-sm bg-white flex items-center gap-2 text-[13px] font-medium px-[5px] hover:bg-[#dddcdc] hover:cursor-pointer"
                 ><a href="#"
                   ><img
                     class="max-w-[15px]"
@@ -813,16 +892,16 @@
               >
               <span
                 class="number relative rounded-sm bg-white flex items-center gap-2 text-[13px] font-medium px-[5px]"
-                ><a href="">148,223</a></span
+                ><a class="hover:text-blue-500" href="">148,223</a></span
               >
             </div>
           </div>
 
           <div
-            class="footer__content2 lg:flex lg:items-center md:flex md:items-center"
+            class="footer__content2 sm:flex sm:items-center lg:flex lg:items-center md:flex md:items-center"
           >
             <ul
-              class="text-white flex gap-6 text-[12px] mb-3 md:mb-6 lg:mr-[24px] md:mr-[24px]"
+              class="text-white flex gap-6 text-[12px] mb-3 sm:mb-6 md:mb-6 lg:mr-[24px] md:mr-[24px] sm:mr-[24px]"
             >
               <li><a class="hover:text-[#cb8ae9]" href="#">Support</a></li>
               <li><a class="hover:text-[#cb8ae9]" href="#">Privacy</a></li>

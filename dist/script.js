@@ -1,8 +1,10 @@
 var slider = tns({
   container: ".slider__content",
-  items: 3,
+  items: 1,
   slideBy: "page",
-  mouseDrag: true,
-  swipeAngle: false,
-  speed: 400,
+  autoplay: true,
+  controlsText: [
+    '<i class="fa-solid fa-chevron-left"></i>',
+    '<i class="fa-solid fa-chevron-right"></i>',
+  ],
 });
