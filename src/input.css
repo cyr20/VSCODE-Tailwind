@@ -6,6 +6,30 @@
   @apply mx-auto max-w-[140rem] w-full;
 }
 
+.header.active {
+  @apply shadow-[#13121233] duration-[.5s];
+}
+
+.header.open {
+  @apply block bg-[#2c2c32] text-white w-[100%] z-[9999] top-0 left-0 fixed h-[29rem] overflow-y-auto md:h-auto ease-in-out duration-[1.3s];
+}
+
+.header__navi.open {
+  @apply flex flex-col h-[0vh] left-0 top-[100%];
+}
+
+.header__ul.open {
+  @apply absolute;
+}
+
+.header li:first-child {
+  @apply sm:pt-[1rem] lg:pt-0;
+}
+
+.header li {
+  @apply pl-0;
+}
+
 .platform::before {
   content: "";
   position: absolute;
@@ -30,32 +54,24 @@
   left: -5px;
 }
 
-.features {
-  @apply p-5;
+.features__content__item:nth-child(odd) {
+  @apply bg-[#ffff];
 }
 
-.features__wrapper {
-  @apply mx-auto max-w-[140rem] w-full;
-}
-
-.features__content {
-  @apply gap-10;
-}
-
-.features__item:nth-child(odd) {
-  @apply bg-[#ffff] lmd:flex lmd:flex-row;
-}
-
-.features__item:nth-child(even) {
-  @apply bg-[#f5f5f5] lg:flex lg:flex-row-reverse lmd:flex lmd:flex-row-reverse;
-}
-
-.features__item {
-  @apply mb-10 pt-4 pb-10 lg:flex lg:items-center lg:justify-between md:flex md:items-center md:gap-[100px] lmd:gap-[100px];
+.features__content__item:nth-child(even) {
+  @apply bg-[#f5f5f5];
 }
 
 .features__item img {
   @apply w-[18rem] mt-10 mx-auto lg:w-[750px] md:w-[550px] lmd:w-[700px];
+}
+
+.features__item {
+  @apply mb-10 pt-4 pb-10 lg:flex lg:items-center lg:justify-between md:flex md:items-center md:gap-[100px] lmd:gap-[100px] lg:mx-[50px];
+}
+
+.features__content__item {
+  @apply lg:px-[375px] gap-10;
 }
 
 .features_disc h3 {
@@ -79,7 +95,7 @@
 }
 
 .tns-controls {
-  @apply flex items-center justify-between absolute top-[10rem] lg:left-[-4rem] lg:w-[80rem] lmd:w-[40rem] lmd:left-[-2.5rem];
+  @apply flex items-center justify-between absolute sm:top-[14rem] lg:left-[-4rem] lg:w-[80rem] lmd:w-[40rem] lmd:left-[-2.5rem] sm:w-[27rem] sm:left-[-2rem] lsm:w-[35rem] lsm:left-[-1.5rem] lsm:top-[10rem] md:w-[52rem] md:left-[-2rem];
 }
 
 .tns-button {
@@ -90,6 +106,18 @@
   @apply hidden;
 }
 
-button[data-actions="start"] {
-  @apply hidden;
+.banner__download__button {
+  @apply relative px-[1rem];
+}
+
+.banner__dropdown {
+  @apply hidden border-[#0066b8] absolute z-[8888] top-[22.6rem] border-[.15rem] left-[380px];
+}
+
+.banner__dropdown.open {
+  @apply block;
+}
+
+.banner_dropdown td {
+  @apply border-b-[1px] border-[#adacac];
 }

@@ -16,34 +16,46 @@
   </head>
   <body>
     <header
-      class="bg-[#2c2c32] sm:py-[10px] lg:px-[375px] md:px-[18px] lsm:py-0 lmd:p-[10px] lmd:px-[20px] md:py-0 lg:py-0"
+      class="header bg-[#2c2c32] sm:pt-[10px] sm:px-[15px] lg:px-[375px] md:px-[18px] lsm:py-0 lmd:p-[10px] lmd:px-[20px] md:pt-2.7 lg:py-0 sm:z-[9999] sm:top-0 sm:left-0 sm:h-[3.3rem] md:h-[3.3rem] fixed w-[100%]"
     >
       <div class="container">
         <div class="header__wrapper">
           <div class="header__content flex justify-between items-center">
-            <div class="header__divider flex items-center gap-3">
+            <div
+              class="header__divider flex items-center sm:flex-col sm:items-start lg:flex-row lg:items-center lg:gap-8"
+            >
               <div class="logo flex gap-3 items-center">
                 <img class="w-7" src="../images/logo.png" alt="" />
                 <h3 class="text-white text-[20px]">Visual Studio Code</h3>
               </div>
 
-              <nav class="sm:hidden md:hidden lg:block">
-                <ul class="flex gap-5 text-[#cac8c8]">
-                  <li><a href="#">Docs</a></li>
-                  <li><a href="#">Updates</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">API</a></li>
-                  <li><a href="#">Extensions</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Learn</a></li>
-                  <li><a href="#" class="lg:hidden">Search</a></li>
+              <nav class="header__navi sm:hidden md:hidden lg:block">
+                <ul
+                  class="header__ul flex gap-5 lg:text-[#cac8c8] md:text-[#cac8c8] sm:text-white lsm:text-white lmd:text-white sm:flex sm:flex-col lg:flex-row"
+                >
+                  <li><a href="#" class="lg:hover:text-white">Docs</a></li>
+                  <li><a href="#" class="lg:hover:text-white">Updates</a></li>
+                  <li><a href="#" class="lg:hover:text-white">Blog</a></li>
+                  <li><a href="#" class="lg:hover:text-white">API</a></li>
+                  <li>
+                    <a href="#" class="lg:hover:text-white">Extensions</a>
+                  </li>
+                  <li><a href="#" class="lg:hover:text-white">FAQ</a></li>
+                  <li><a href="#" class="lg:hover:text-white">Learn</a></li>
+                  <li><a href="#" class="sm:block lg:hidden">Search</a></li>
+                  <button
+                    class="rounded-none bg-[#0066b8] text-white py-[14px] pl-[15px] pr-[335px] font-medium text-[20px] flex flex-row items-center gap-2 lg:hidden hover:bg-[#045da7]"
+                  >
+                    <img class="w-[1rem]" src="../images/download.svg" alt="" />
+                    <p class="text-[15px]">Download</p>
+                  </button>
                 </ul>
               </nav>
             </div>
 
             <div class="header__searchbar sm:hidden md:hidden lg:block">
-              <ul class="flex flex-row items-center justify-between">
-                <li class="bg-[#3d3d42]">
+              <ul class="flex flex-row justify-between">
+                <li class="bg-[#3d3d42] hover:bg-[#68686b]">
                   <form
                     action=""
                     class="flex flex-row items-center py-[14px] pl-[20px]"
@@ -55,7 +67,7 @@
                       <input
                         type="text"
                         placeholder="Search Docs"
-                        class="bg-[#3d3d42] border-none"
+                        class="bg-transparent border-none hover:bg-[#68686b]"
                       />
                     </div>
                   </form>
@@ -73,7 +85,9 @@
             </div>
 
             <div>
-              <button class="flex flex-col items-center lg:hidden">
+              <button
+                class="toggle-menu flex flex-col items-center lg:hidden hover:bg-[#0066b8] p-[10px] rounded-md"
+              >
                 <span class="block w-[1.4rem] h-[2px] bg-white mb-1"></span>
                 <span class="block w-[1.4rem] h-[2px] bg-white mb-1"></span>
                 <span class="block w-[1.4rem] h-[2px] bg-white"></span>
@@ -84,7 +98,7 @@
       </div>
     </header>
 
-    <section class="cta bg-[#25252b] px-5">
+    <section class="cta bg-[#25252b] px-5 lg:mt-[52px] sm:mt-[52px]">
       <p class="text-center p-2 text-gray-300">
         <a href="#" class="text-[#0098ff]"
           ><u class="hover:no-underline">Version 1.80</u></a
@@ -121,7 +135,7 @@
                   >
                 </button>
                 <button
-                  class="rounded-none bg-[#0066b8] text-white py-[18.5px] px-4 hover:bg-[#045da7]"
+                  class="banner__download__button rounded-none bg-[#0066b8] text-white py-[18.5px] px-4 hover:bg-[#045da7]"
                 >
                   <img
                     class="w-[20px]"
@@ -129,6 +143,124 @@
                     alt=""
                   />
                 </button>
+
+                <div class="banner__dropdown">
+                  <table
+                    class="table-fixed mx-auto border-separate border-spacing-3 leading-none bg-white"
+                  >
+                    <tbody>
+                      <tr>
+                        <td class="text-[14px] font-medium"></td>
+                        <td href="#" class=""></td>
+                        <td href="#" class="">Stable</td>
+                        <td>Insiders</td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-[14px] font-medium text-left">macOS</td>
+                        <td href="#" class="text-left">Universal</td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download_blue.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download-black.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-[14px] font-medium">Windows x64</td>
+                        <td href="#" class="text-left">User Installer</td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download_blue.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download-black.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-[14px] font-medium text-left">
+                          Linux x64
+                        </td>
+                        <td href="#" class="text-left">.deb</td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download_blue.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download-black.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="text-[14px] font-medium"></td>
+                        <td href="#" class="text-left">.rpm</td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download_blue.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                        <td href="#" class="">
+                          <a href=""
+                            ><img
+                              class="w-[1rem] mx-auto"
+                              src="../images/download-black.svg"
+                              alt=""
+                          /></a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="4">
+                          <a class="text-[#0066b8] hover:underline" href="#"
+                            >Other downloads</a
+                          >
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="4">
+                          or
+                          <a class="text-[#0066b8] hover:underline" href="#"
+                            >open on web</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <p
                 class="platform relative text-gray-300 rounded-md bg-[#25252b] text-[12px] py-[8px] px-[47px] inline-block mb-3"
@@ -221,11 +353,13 @@
       </div>
     </section>
 
-    <section class="slider bg-[#f5f5f5] py-[65px] lg:px-[375px] lmd:px-[100px]">
+    <section
+      class="slider bg-[#f5f5f5] py-[65px] sm:px-[60px] lg:px-[375px] lmd:px-[100px]"
+    >
       <div class="container">
         <div class="slider__wrapper">
-          <div class="slider__content px-[60px]">
-            <div class="slider__divider lg:grid lg:grid-cols-3 lg:items-center">
+          <div class="slider__content">
+            <div class="slider__divider lg:inline-flex lg:items-center">
               <div
                 class="slider__item flex flex-row items-center gap-2 mb-[25px]"
               >
@@ -353,92 +487,98 @@
       </div>
     </section>
 
-    <section class="features lg:px-[375px]">
-      <div class="features__wrapper">
-        <div class="features__content">
-          <div class="features__item">
-            <div class="features__img">
-              <img src="../images/intellisense.svg" alt="" />
-            </div>
-            <div class="features_disc">
-              <h3>Meet IntelliSense.</h3>
-              <p>
-                Go beyond syntax highlighting and autocomplete with
-                IntelliSense, which provides smart completions based on variable
-                types, function definitions, and imported modules.
-              </p>
-            </div>
+    <section class="features">
+      <div class="features__content__item">
+        <div class="features__item">
+          <div class="features__img">
+            <img src="../images/intellisense.svg" alt="" />
           </div>
-
-          <div class="features__item">
-            <div class="features__img">
-              <img src="../images/debug.svg" alt="" />
-            </div>
-            <div class="features_disc">
-              <h3>Print statement debugging is a thing of the past.</h3>
-              <p>
-                Debug code right from the editor. Launch or attach to your
-                running apps and debug with break points, call stacks, and an
-                interactive console.
-              </p>
-            </div>
+          <div class="features_disc">
+            <h3>Meet IntelliSense.</h3>
+            <p>
+              Go beyond syntax highlighting and autocomplete with IntelliSense,
+              which provides smart completions based on variable types, function
+              definitions, and imported modules.
+            </p>
           </div>
+        </div>
+      </div>
 
-          <div class="features__item">
-            <div class="features__img">
-              <img src="../images/git.svg" alt="" />
-            </div>
-            <div class="features_disc">
-              <h3>Git commands built-in.</h3>
-              <p>
-                Working with Git and other SCM providers has never been easier.
-                Review diffs, stage files, and make commits right from the
-                editor. Push and pull from any hosted SCM service.
-              </p>
-            </div>
+      <div class="features__content__item">
+        <div class="features__item lg:flex lg:flex-row-reverse">
+          <div class="features__img">
+            <img src="../images/debug.svg" alt="" />
           </div>
-
-          <div class="features__item">
-            <div class="features__img">
-              <img
-                class="hover:scale-[1.1]"
-                src="../images/Extensions.png"
-                alt=""
-              />
-            </div>
-            <div class="features_disc">
-              <h3>Extensible and customizable.</h3>
-              <p>
-                Want even more features? Install extensions to add new
-                languages, themes, debuggers, and to connect to additional
-                services. Extensions run in separate processes, ensuring they
-                won't slow down your editor.
-                <a href="#" class="text-[#0066b8] hover:underline"
-                  >Learn more about extensions.</a
-                >
-              </p>
-            </div>
+          <div class="features_disc">
+            <h3>Print statement debugging is a thing of the past.</h3>
+            <p>
+              Debug code right from the editor. Launch or attach to your running
+              apps and debug with break points, call stacks, and an interactive
+              console.
+            </p>
           </div>
+        </div>
+      </div>
 
-          <div class="features__item">
-            <div class="features__img">
-              <img src="../images/azure.svg" alt="" />
-            </div>
-            <div class="features_disc">
-              <h3>Deploy with confidence and ease</h3>
-              <p>
-                With
-                <a href="#" class="text-[#0066b8] hover:underline"
-                  >Microsoft Azure</a
-                >
-                you can deploy and host your React, Angular, Vue, Node, Python
-                (and more!) sites, store and query relational and document based
-                data, and scale with serverless computing, all with ease,
-                <a href="#" class="text-[#0066b8] hover:underline"
-                  >all from within VS Code</a
-                >.
-              </p>
-            </div>
+      <div class="features__content__item">
+        <div class="features__item">
+          <div class="features__img">
+            <img src="../images/git.svg" alt="" />
+          </div>
+          <div class="features_disc">
+            <h3>Git commands built-in.</h3>
+            <p>
+              Working with Git and other SCM providers has never been easier.
+              Review diffs, stage files, and make commits right from the editor.
+              Push and pull from any hosted SCM service.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features__content__item">
+        <div class="features__item lg:flex lg:flex-row-reverse">
+          <div class="features__img">
+            <img
+              class="hover:scale-[1.1]"
+              src="../images/Extensions.png"
+              alt=""
+            />
+          </div>
+          <div class="features_disc">
+            <h3>Extensible and customizable.</h3>
+            <p>
+              Want even more features? Install extensions to add new languages,
+              themes, debuggers, and to connect to additional services.
+              Extensions run in separate processes, ensuring they won't slow
+              down your editor.
+              <a href="#" class="text-[#0066b8] hover:underline"
+                >Learn more about extensions.</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="features__content__item">
+        <div class="features__item">
+          <div class="features__img">
+            <img src="../images/azure.svg" alt="" />
+          </div>
+          <div class="features_disc">
+            <h3>Deploy with confidence and ease</h3>
+            <p>
+              With
+              <a href="#" class="text-[#0066b8] hover:underline"
+                >Microsoft Azure</a
+              >
+              you can deploy and host your React, Angular, Vue, Node, Python
+              (and more!) sites, store and query relational and document based
+              data, and scale with serverless computing, all with ease,
+              <a href="#" class="text-[#0066b8] hover:underline"
+                >all from within VS Code</a
+              >.
+            </p>
           </div>
         </div>
       </div>
@@ -456,7 +596,7 @@
               class="language__container grid grid-cols-2 gap-5 pt-10 lg:grid lg:grid-cols-6 md:grid md:grid-cols-4 lmd:grid lmd:grid-cols-4"
             >
               <div class="language__item">
-                <p><img src="../images/javascript.svg" alt="" />Javascript</p>
+                <p><img src="../images/javascript.svg" alt="" />JavaScript</p>
               </div>
 
               <div class="language__item">
@@ -725,6 +865,7 @@
                 <tr>
                   <td class="text-[14px] font-medium">Snap</td>
                   <td
+                    colspan="2"
                     class="rounded-none bg-[#0066b8] text-white text-[12px] hover:bg-[#045da7]"
                   >
                     <a href="#">Snap Store</a>
