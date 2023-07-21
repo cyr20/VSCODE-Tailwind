@@ -32,8 +32,8 @@ var slider = tns({
   slideBy: "page",
   autoplay: false,
   controlsText: [
-    '<i class="fa-solid fa-chevron-left"></i>',
-    '<i class="fa-solid fa-chevron-right"></i>',
+    '<i class="fa-solid fa-chevron-left text-[20px] text-gray-700 hover:text-black"></i>',
+    '<i class="fa-solid fa-chevron-right text-[20px] text-gray-700 hover:text-black"></i>',
   ],
   nav: false,
 });
